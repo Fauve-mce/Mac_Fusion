@@ -1,0 +1,68 @@
+/***Nav***/
+/* Style de la barre de navigation */
+.navbar {
+    width: 100%;
+    height: 22px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    font-size: 14px;
+    -webkit-app-region: drag; /* Pour permettre de déplacer la fenêtre dans Electron (par exemple) */
+  }
+  
+  /* Style des éléments de la barre de navigation */
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .navbar li {
+    margin: 0;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 0 12px;
+    line-height: 22px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Style pour l'icône */
+  .navbar .icon {
+    margin-right: 10px;
+  }
+  
+  /* Style pour les boutons de fermeture/minimisation/maximisation */
+  .window-buttons {
+    margin-right: 8px;
+  }
+  
+  .window-button {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 6px;
+  }
+  
+  .red {
+    background-color: #ff5f57;
+  }
+  
+  .yellow {
+    background-color: #ffbd2e;
+  }
+  
+  .green {
+    background-color: #28c940;
+  }
