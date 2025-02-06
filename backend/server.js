@@ -37,6 +37,10 @@ mongoose.connect(uri)
     .catch((error) => console.log('Erreur de connexion à MongoDB :', error));
 
 
+    // Ajout d'un écouteur d'événement pour confirmer la connexion
+mongoose.connection.on('connected', () => {
+  console.log('Mongoose est connecté à la base de données.');
+});
 
 // Exemple de route (une route de base pour tester)
 app.get('/', (req, res) => {
